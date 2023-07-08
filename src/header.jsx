@@ -10,6 +10,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import img from '../public/assets/Logo.png'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -23,7 +24,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <img className="h-8 w-auto" src="../assets/Logo.png" alt="" />
+            <img className="h-8 w-auto" src="../public/assets/Logo.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -37,24 +38,37 @@ export default function Header() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
             Demo
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
             Shops
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
             Products
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
             Blog
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:underline">
             Page
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
+            <img src="../public/assets/search.png" alt="" className='h-5 w-5' />
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
+            <img src="../public/assets/user.png" alt="" className='h-5 w-5' />
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
+            <img src="../public/assets/heart(1).png" alt="" className='h-5 w-5' />
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
+            <img src="../public/assets/shopping-bag.png" alt="" className='h-5 w-5' />
+          </a>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
+            <img src="../public/assets/menu.png" alt="" className='h-5 w-5' />
           </a>
         </div>
       </nav>
@@ -65,7 +79,7 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <img
                 className="h-8 w-auto"
-                src="../assets/Logo.png"
+                src="../public/assets/Logo.png"
                 alt=""
               />
             </a>
@@ -83,34 +97,52 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline"
                 >
                   Demo
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline"
                 >
                   Shops
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline"
                 >
                   Product
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline"
                 >
                   Blog
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:underline"
                 >
                   Page
                 </a>
+                <ul className='flex'>
+                  <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20" >
+                    <img src="../public/assets/search.png" alt="" className='h-5 w-5' />
+                  </a></li>
+                  <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
+                    <img src="../public/assets/user.png" alt="" className='h-5 w-5' />
+                  </a></li>
+                  <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
+                    <img src="../public/assets/heart(1).png" alt="" className='h-5 w-5' />
+                  </a></li>
+                  <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
+                    <img src="../public/assets/shopping-bag.png" alt="" className='h-5 w-5' />
+                  </a></li>
+                  <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
+                    <img src="../public/assets/menu.png" alt="" className='h-5 w-5' />
+                  </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
