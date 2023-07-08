@@ -45,7 +45,7 @@ export default function SliderIndicatorsControlsInside() {
               </div>
               <div>
                 <img
-                  src="../public/assets/img1.png"
+                  src="/assets/img1.png"
                   className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
                 />
               </div>
@@ -66,7 +66,7 @@ export default function SliderIndicatorsControlsInside() {
               </div>
               <div>
                 <img
-                  src="../public/assets/img2.png"
+                  src="/assets/img2.png"
                   className="w-[900px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
                 />
               </div>
@@ -87,7 +87,7 @@ export default function SliderIndicatorsControlsInside() {
               </div>
               <div>
                 <img
-                  src="../public/assets/img4.png"
+                  src="/assets/img4.png"
                   className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
                 />
               </div>

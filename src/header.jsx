@@ -56,19 +56,19 @@ export default function Header() {
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
-            <img src="../public/assets/search.png" alt="" className='h-5 w-5' />
+            <img src="/assets/search.png" alt="" className='h-5 w-5' />
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
-            <img src="../public/assets/user.png" alt="" className='h-5 w-5' />
+            <img src="/assets/user.png" alt="" className='h-5 w-5' />
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
-            <img src="../public/assets/heart(1).png" alt="" className='h-5 w-5' />
+            <img src="/assets/heart(1).png" alt="" className='h-5 w-5' />
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
-            <img src="../public/assets/shopping-bag.png" alt="" className='h-5 w-5' />
+            <img src="/assets/shopping-bag.png" alt="" className='h-5 w-5' />
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900 mr-6">
-            <img src="../public/assets/menu.png" alt="" className='h-5 w-5' />
+            <img src="/assets/menu.png" alt="" className='h-5 w-5' />
           </a>
         </div>
       </nav>
@@ -79,7 +79,7 @@ export default function Header() {
             <a href="#" className="-m-1.5 p-1.5">
               <img
                 className="h-8 w-auto"
-                src="../public/assets/Logo.png"
+                src="/assets/Logo.png"
                 alt=""
               />
             </a>
@@ -127,19 +127,19 @@ export default function Header() {
                 </a>
                 <ul className='flex'>
                   <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20" >
-                    <img src="../public/assets/search.png" alt="" className='h-5 w-5' />
+                    <img src="/assets/search.png" alt="" className='h-5 w-5' />
                   </a></li>
                   <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
-                    <img src="../public/assets/user.png" alt="" className='h-5 w-5' />
+                    <img src="/assets/user.png" alt="" className='h-5 w-5' />
                   </a></li>
                   <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
-                    <img src="../public/assets/heart(1).png" alt="" className='h-5 w-5' />
+                    <img src="/assets/heart(1).png" alt="" className='h-5 w-5' />
                   </a></li>
                   <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
-                    <img src="../public/assets/shopping-bag.png" alt="" className='h-5 w-5' />
+                    <img src="/assets/shopping-bag.png" alt="" className='h-5 w-5' />
                   </a></li>
                   <li><a href="#" className="text-sm font-semibold leading-6 text-gray-900 m-20">
-                    <img src="../public/assets/menu.png" alt="" className='h-5 w-5' />
+                    <img src="/assets/menu.png" alt="" className='h-5 w-5' />
                   </a>
                   </li>
                 </ul>
