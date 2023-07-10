@@ -7,7 +7,7 @@ export default function SliderIndicatorsControlsInside() {
       type: "slider",
       focusAt: "center",
       perView: 1,
-      // autoplay: 3000,
+      autoplay: 3000,
       animationDuration: 2000,
       gap: 0,
       classes: {
@@ -46,7 +46,7 @@ export default function SliderIndicatorsControlsInside() {
               <div>
                 <img
                   src="/assets/img1.png"
-                  className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
+                  className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px] lg:h-[500px]"
                 />
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function SliderIndicatorsControlsInside() {
               <div>
                 <img
                   src="/assets/img2.png"
-                  className="w-[900px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
+                  className="w-[900px]  m-auto  mt-10 md:w-[250px] md:h-[400px] lg:h-[500px]"
                 />
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function SliderIndicatorsControlsInside() {
               <div>
                 <img
                   src="/assets/img4.png"
-                  className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px]"
+                  className="w-[900px] h-[377px]  m-auto  mt-10 md:w-[250px] md:h-[400px] lg:h-[500px]"
                 />
               </div>
             </div>

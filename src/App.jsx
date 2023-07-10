@@ -1,5 +1,5 @@
-import "./App.css";
 import Header from "./header";
+import HotDeals from "./hotdeals";
 import Slidered from "./slidered";
 import YouMightLike from "./youmightlike";
 
@@ -9,6 +9,7 @@ function App() {
       <Header />
       <Slidered />
       <YouMightLike />
+      <HotDeals />
     </div>
   );
 }
