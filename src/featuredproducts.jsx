@@ -1,36 +1,80 @@
 const products = [
   {
     id: 1,
-    name: "Summer Dress Women Short",
+    name: "Kirbby T-Shirt",
     href: "#",
-    imageSrc: "/assets/product1.jpg",
+    imageSrc: "/assets/pro1.jpg",
     imageSrc2: "/assets/heart(1).png",
     imageAlt: "Shirt",
-    price: "$70.00",
+    price: "$40.00",
   },
   {
     id: 2,
     name: "Neck Casual Short Zessi",
     href: "#",
-    imageSrc: "/assets/product2.jpg",
+    imageSrc: "/assets/pro2.jpg",
     imageSrc2: "/assets/heart(1).png",
     imageAlt: "Shirt",
     price: "$50.00",
   },
   {
     id: 3,
-    name: "Dresses Shorts With Pockets",
+    name: "Women Blazzer",
     href: "#",
-    imageSrc: "/assets/product3.jpg",
+    imageSrc: "/assets/pro3.jpg",
     imageSrc2: "/assets/heart(1).png",
     imageAlt: "Shirt",
-    price: "$90.00",
+    price: "$80.00",
   },
   {
     id: 4,
-    name: "Women Turtleneck Tie",
+    name: "Boy T-Shirt",
     href: "#",
-    imageSrc: "/assets/product4.jpg",
+    imageSrc: "/assets/pro4.jpg",
+    imageSrc2: "/assets/heart(1).png",
+    imageAlt: "Shirt",
+    price: "$80.00",
+    color: "red",
+    CancelAmount: "$98.00",
+  },
+  {
+    id: 5,
+    name: "Men's 3-Pack V Neck T-Shirt",
+    href: "#",
+    imageSrc: "/assets/pro5.jpg",
+    imageSrc2: "/assets/heart(1).png",
+    imageAlt: "Shirt",
+    price: "$80.00",
+    color: "red",
+    CancelAmount: "$110.00",
+  },
+  {
+    id: 6,
+    name: "Dress Short with Pocket",
+    href: "#",
+    imageSrc: "/assets/pro6.jpg",
+    imageSrc2: "/assets/heart(1).png",
+    imageAlt: "Shirt",
+    price: "$80.00",
+    color: "red",
+    CancelAmount: "$98.00",
+  },
+  {
+    id: 7,
+    name: "Summer Dress Women Short Sleeve",
+    href: "#",
+    imageSrc: "/assets/pro7.jpg",
+    imageSrc2: "/assets/heart(1).png",
+    imageAlt: "Shirt",
+    price: "$80.00",
+    color: "red",
+    CancelAmount: "$70.00",
+  },
+  {
+    id: 8,
+    name: "",
+    href: "#",
+    imageSrc: "/assets/pro8.jpg",
     imageSrc2: "/assets/heart(1).png",
     imageAlt: "Shirt",
     price: "$80.00",
@@ -39,22 +83,15 @@ const products = [
   },
 ];
 
-export default function HotDeals() {
+export default function FeaturedProduct() {
   return (
-    <div className="bg-white -mt-20">
+    <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="lg:text-3xl md:text-3xl font-bold tracking-tight text-gray-900 -mt-6 text-center text-3xl md:-pt-10">
-          Hot Deals
+          Featured Products
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
-          <div className="pt-10 m-auto">
-            <h1 className="text-3xl ">Summer Sale</h1>
-            <h3 className="text-3xl font-bold mb-4">Up to 60% Off</h3>
-            <a className="hover:text-red-600 " href="#">
-              VIEW ALL
-            </a>
-          </div>
+        <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product, index) => (
             <div key={product.id} className="group relative">
               <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
