@@ -1,5 +1,6 @@
 import FeaturedProduct from "./featuredproducts";
 import FieldArea from "./fieldarea";
+import Footer from "./footer";
 import Header from "./header";
 import HotDeals from "./hotdeals";
 import MainProduct from "./mainProduct";
@@ -16,6 +17,7 @@ function App() {
       <MainProduct/>
       <FeaturedProduct/>
       <FieldArea />
+      <Footer/>
     </div>
   );
 }

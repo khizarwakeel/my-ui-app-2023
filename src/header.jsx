@@ -14,7 +14,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
-import img from "../public/assets/Logo.png";
+import img from "/assets/Logo.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -163,60 +163,68 @@ export default function Header() {
                   Page
                 </a>
                 <div className="mr-16 pr-11">
-                <ul className="flex">
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
-                    >
-                      <img
-                        src="/assets/search.png"
-                        alt=""
-                        className="h-5 w-5"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
-                    >
-                      <img src="/assets/user.png" alt="" className="h-5 w-5" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
-                    >
-                      <img
-                        src="/assets/heart(1).png"
-                        alt=""
-                        className="h-5 w-5"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
-                    >
-                      <img
-                        src="/assets/shopping-bag.png"
-                        alt=""
-                        className="h-5 w-5"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
-                    >
-                      <img src="/assets/menu.png" alt="" className="h-5 w-5" />
-                    </a>
-                  </li>
-                </ul>
+                  <ul className="flex">
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
+                      >
+                        <img
+                          src="/assets/search.png"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
+                      >
+                        <img
+                          src="/assets/user.png"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
+                      >
+                        <img
+                          src="/assets/heart(1).png"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
+                      >
+                        <img
+                          src="/assets/shopping-bag.png"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm font-semibold leading-6 text-gray-900 md:m-20 mr-12"
+                      >
+                        <img
+                          src="/assets/menu.png"
+                          alt=""
+                          className="h-5 w-5"
+                        />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
