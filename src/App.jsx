@@ -7,7 +7,7 @@ import ImageSlider from "./imageslider";
 import MainProduct from "./mainProduct";
 import Slidered from "./slidered";
 import YouMightLike from "./youmightlike";
-
+import "./App.css";
 
 function App() {
   return (
@@ -16,11 +16,11 @@ function App() {
       <Slidered />
       <YouMightLike />
       <HotDeals />
-      <MainProduct/>
-      <FeaturedProduct/>
-      <ImageSlider/>
+      <MainProduct />
+      <FeaturedProduct />
+      <ImageSlider />
       <FieldArea />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

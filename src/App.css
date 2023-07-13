@@ -1,0 +1,3 @@
+#hoverremove::-webkit-scrollbar {
+    width: 0;
+}

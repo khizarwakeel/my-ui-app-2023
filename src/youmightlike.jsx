@@ -59,30 +59,23 @@ const products = [
 
 export default function YouMightLike() {
   return (
-    <div className="bg-white ml-10 mr-10 rounded-t-2xl text-center">
+    <div className="bg-white lg:mx-10 mx-4 rounded-t-2xl text-center">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900 text-center md:m-auto">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 text-center md:ml-8">
           You Might Like
         </h2>
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-8 pr-20 md:m-auto md:ml-10">
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-8 px-8  lg:pr-20 md:m-auto md:mx-2">
           {products.map((product) => (
             <div key={product.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 w-[200px] overflow-hidden rounded-md lg:aspect-none group-hover:opacity-90 lg:h-80">
-                <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  className="h-[100px] w-[100px] object-cover object-center mt-10 m-auto"
-                />
-                <p className="text-sm font-medium mt-4">{product.title}</p>
-              </div>
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-sm text-gray-700">
-                    <a href={product.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                    </a>
-                  </h3>
-                </div>
+              <div className="aspect-h-1 aspect-w-1 w-[200px] mx-auto overflow-hidden rounded-md lg:aspect-none group-hover:opacity-90 ">
+                <a href={product.href}>
+                  <img
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    className="h-[100px] w-[100px] object-cover object-center mt-10 m-auto"
+                  />
+                  <p className="text-sm font-medium mt-4">{product.title}</p>
+                </a>
               </div>
             </div>
           ))}

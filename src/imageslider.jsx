@@ -1,107 +1,79 @@
-import { useEffect, useRef } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import React, { useRef, useEffect } from "react";
 
-const SmallSlider = ({ items }) => {
-  const sliderRef = useRef(null);
+function ImageSlider() {
+  const sliderRef = useRef(null); // Reference to the slider container element
 
   useEffect(() => {
-    const slider = sliderRef.current;
-    let scrollCount = null;
-    let scroll = null;
+    const slider = sliderRef.current; // Access the slider container element
 
-    const handleWheel = (e) => {
-      e.preventDefault();
-      clearTimeout(scroll);
-      scroll = setTimeout(() => {
-        scrollCount = 0;
-      }, 200);
+    const handleMouseMove = (event) => {
+      const sliderWidth = slider.offsetWidth; // Width of the slider container
+      const scrollWidth = slider.scrollWidth; // Total scrollable width of the slider content
+      const cursorX = event.clientX; // X position of the cursor
 
-      if (scrollCount) return 0;
+      // Calculate the scroll position based on the cursor position and slider dimensions
+      const scrollPosition =
+        (cursorX / sliderWidth) * (scrollWidth - sliderWidth);
 
-      scrollCount = 1;
-
-      if (e.deltaY < 0) {
-        slider.slickNext();
-      } else {
-        slider.slickPrev();
-      }
+      // Set the scroll position of the slider
+      slider.scrollLeft = scrollPosition;
     };
 
-    
-  }, [sliderRef]);
+    slider.addEventListener("mousemove", handleMouseMove);
 
-  const settings = {
-    arrows: false,
-    dots: false,
-    infinite: true,
-    initialSlide: 0,
-    slidesToScroll: 1,
-    slidesToShow: 5,
-    responsive: [
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
+    // Clean up the event listener when the component unmounts
+    return () => {
+      slider.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
-    <div className="slider max-w-7xl mx-auto  pb-16 md:w-11/12 bg-white lg:w-[92%]">
-      <Slider {...settings} ref={sliderRef}>
-        {items.map((item) => (
-          <div
-            key={item.id}
-            className="slider__item inline-flex w-72 h-64 py-16  text-white items-center lg:w-[1250px] justify-center text-3xl rounded-md mx-4"
-          >
-            <img src={item.img} alt="" className=" lg:pr-2 md:pr-2 pr-0 " />
+    <>
+      <div className="bg-white">
+        <h1 className="uppercase py-10 text-center font-semibold">
+          see all product
+        </h1>
+        <div
+          className=" max-h-[250px] flex overflow-x-auto"
+          ref={sliderRef}
+          id="hoverremove"
+        >
+          <div className=" min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll1.jpg" alt="" />
           </div>
-        ))}
-      </Slider>
-    </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll2.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll3.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll4.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll5.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll6.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll7.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll8.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll9.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll10.jpg" alt="" />
+          </div>
+          <div className="min-w-[200px] h-[200px] mr-5">
+            <img src="/assets/scroll11.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </>
   );
-};
-
-const BigSlider = ({ items }) => {
-  const settings = {
-    arrows: false,
-    dots: false,
-    infinite: true,
-    initialSlide: 0,
-    slidesToScroll: 1,
-    slidesToShow: 3.5,
-    responsive: [
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  
-};
-
-const items = [
-  { id: 1, img: "/assets/product1.jpg" },
-  { id: 2, img: "18048696664358188_900292667.jpg" },
-  { id: 3, img: "18048696664358188_900292667.jpg" },
-  { id: 4, img: "18048696664358188_900292667.jpg" },
-  { id: 5, img: "18048696664358188_900292667.jpg" },
-  { id: 6, img: "18048696664358188_900292667.jpg" },
-];
-
-const ImageSlider = () => {
-  return (
-    <div className="">
-      <SmallSlider items={items} />
-      <BigSlider items={items} />
-    </div>
-  );
-};
+}
 
 export default ImageSlider;
