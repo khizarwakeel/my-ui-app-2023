@@ -1,27 +1,24 @@
 import React, { useRef, useEffect } from "react";
 
 function ImageSlider() {
-  const sliderRef = useRef(null); // Reference to the slider container element
+  const sliderRef = useRef(null);
 
   useEffect(() => {
-    const slider = sliderRef.current; // Access the slider container element
+    const slider = sliderRef.current;
 
     const handleMouseMove = (event) => {
-      const sliderWidth = slider.offsetWidth; // Width of the slider container
-      const scrollWidth = slider.scrollWidth; // Total scrollable width of the slider content
-      const cursorX = event.clientX; // X position of the cursor
+      const sliderWidth = slider.offsetWidth;
+      const scrollWidth = slider.scrollWidth;
+      const cursorX = event.clientX;
 
-      // Calculate the scroll position based on the cursor position and slider dimensions
       const scrollPosition =
         (cursorX / sliderWidth) * (scrollWidth - sliderWidth);
 
-      // Set the scroll position of the slider
       slider.scrollLeft = scrollPosition;
     };
 
     slider.addEventListener("mousemove", handleMouseMove);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       slider.removeEventListener("mousemove", handleMouseMove);
     };
